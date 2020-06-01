@@ -1,7 +1,7 @@
 
 ## How to run the project
 
-- Install Homestead following [this documentation](https://laravel.com/docs/7.x/homestead#installation-and-setup), for windows users could be easier install it using docker
+- Install Homestead by following [this documentation](https://laravel.com/docs/7.x/homestead#installation-and-setup), for windows users could be easier install it using docker
 - Clone this repo in the working folder (Ex.: ~/code/project1)
 - Launch vagrant up
 - Go to [Homestead.test](http://homestead.test)
