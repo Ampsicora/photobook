@@ -59,6 +59,18 @@
                             <span class="input-group-prepend">
                                 <button type="submit" class="btn btn-primary">Share</button>
                             </span>
+                            @if(isset($photo->token))
+                                <div>
+                                    <span class="input-group-prepend">
+                                        <h5>Shared Link:</h5>
+                                        <a href="/sharedPhoto/{{ $photo->id }}/{{ $photo->token }}" target="_blank" class="mt-3 ml-3">http://homestead.test/sharedPhoto/{{ $photo->id }}/{{ $photo->token }}</a>
+                                    </span>
+                                    <span class="input-group-prepend">
+                                        <h5>Expiration Date:</h5>
+                                        <p class="mt-3 ml-3">{{ $photo->token_death_date }}</p>
+                                    </span>
+                                </div>
+                            @endif
                         </div>
                     </form>
                 </div>

@@ -60,7 +60,7 @@
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
+                                {{ Auth::user()->name }}
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -73,6 +73,11 @@
                                     @csrf
                                 </form>
                             </div>
+                        </li>
+                        <li>
+                            <a id="photos" class="nav-link ml-3" href="/photo" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Photos
+                            </a>
                         </li>
                         @endguest
                     </ul>
