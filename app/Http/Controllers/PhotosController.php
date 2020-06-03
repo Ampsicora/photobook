@@ -80,8 +80,8 @@ class PhotosController extends Controller
             'version'   => 'latest',
             'region'    => 'us-east-1',
             'credentials' => [
-                'key' => 'AKIAIHWZRZGFABQON45Q',
-                'secret' => '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'
+                'key' => env('AWS_ACCESS_KEY_ID'),
+                'secret' => env('AWS_SECRET_ACCESS_KEY')
             ]
         ]);
 
